@@ -4,6 +4,6 @@
 #rpc_settings .span-4 {padding-bottom:15px}
 #rpc_settings .clear {clear:both}
 #rpc_settings .row table {border:1px solid #ccc; border-bottom: none; border-right: none}
-#rpc_settings .row table td {text-align: center; border-right:1px solid #ccc; width: 25%; border-bottom: 1px solid #ccc}
+#rpc_settings .row table td {text-align: center; border-right:1px solid #ccc; width: 33%; border-bottom: 1px solid #ccc}
 #rpc_settings .reset {cursor: pointer}
 .background-image {color:blue; text-decoration: underline; cursor: pointer}

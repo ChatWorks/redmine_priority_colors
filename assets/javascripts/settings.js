@@ -75,12 +75,9 @@ jQuery(document).ready(function(){
 
 	jQuery('.reset').click(function(){
 		var key = jQuery(this).attr('id').split('_')[1];
-		jQuery('#target_' + key).css({'background': 'inherit !important', 'color': 'inherit !important'});
+		jQuery('#target_' + key).css({'background-color': ''});
 
-		jQuery('#color_' + key).css({'background': '#FFFFFF !important'});
-		jQuery('#select_color_' + key).val("");
-
-		jQuery('#background-color_' + key).css({'background': '#FFFFFF !important'});
+		jQuery('#background-color_' + key).css({'background-color': ''});
 		jQuery('#select_background-color_' + key).val("");
 	});
 })
@@ -97,6 +94,4 @@ function updateColorpickerTarget(element, color)
 
 	jQuery('#select_'+ID).val(color);
 	jQuery('#target_'+key).css(optionCode, color + " !important");
-
-	console.log('#target_'+key, optionCode, color);
 }
