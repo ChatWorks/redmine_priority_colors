@@ -10,9 +10,7 @@ class RpcadminController < ApplicationController
 		@settingsDisplay = RpcadminHelper.getSettingsDisplay
 		@is_enabled = RpcadminHelper.isPluginEnabled
 
-		@tracker_list  = Tracker.all
 		@priority_list = IssuePriority.all
-		@status_list   = IssueStatus.all
 		@isUserAdmin   = (User.current.admin?)
 	end
 
