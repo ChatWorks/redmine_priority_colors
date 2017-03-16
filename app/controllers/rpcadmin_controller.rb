@@ -32,7 +32,7 @@ class RpcadminController < ApplicationController
 			@storedData = ['enabled' => @enabled, 'css' => @css]
 
 			@configuration_file = RpcadminHelper.getConfigurationFile
-			File.open(@configuration_file, 'w') { |file| file.write(@storedData.to_json) }
+			File.open(@configuration_file, 'w') { |file| file.write(JSON.pretty_generate(@storedData)) }
 		end
 		
 		redirect_to('/priority-colors/settings')
