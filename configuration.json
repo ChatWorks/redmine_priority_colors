@@ -1,1 +1,22 @@
-[{"enabled":"1","css":{"tracker-1":{"color":"#000000","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"tracker-2":{"color":"#000000","background-color":"#61ffa3","background-image":"http://redmine.dev/images/add.png"},"tracker-3":{"color":"#000000","background-color":"#ffc533","background-image":"http://redmine.dev/images/add.png"},"priority-1":{"color":"","background-color":"","background-image":"http://redmine.dev/images/add.png"},"priority-2":{"color":"#ffffff","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"priority-3":{"color":"#ffffff","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"priority-4":{"color":"#ffffff","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"priority-5":{"color":"#ffffff","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"status-2":{"color":"#CCCCCC","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"status-3":{"color":"#CCCCCC","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"status-4":{"color":"#CCCCCC","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"status-5":{"color":"#CCCCCC","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"status-6":{"color":"#CCCCCC","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"},"status-7":{"color":"#CCCCCC","background-color":"#FF3333","background-image":"http://redmine.dev/images/add.png"}}}]
+[
+  {
+    "enabled": "1",
+    "css": {
+      "priority-1": {
+        "background-color": "#d2f0ff"
+      },
+      "priority-2": {
+        "background-color": ""
+      },
+      "priority-3": {
+        "background-color": "#ffe0ab"
+      },
+      "priority-4": {
+        "background-color": "#fcc5b0"
+      },
+      "priority-5": {
+        "background-color": "#f5acac"
+      }
+    }
+  }
+]
