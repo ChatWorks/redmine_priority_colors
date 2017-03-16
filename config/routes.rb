@@ -1,2 +1,2 @@
-get '/issue-color-label/settings', :to => 'icladmin#settings'
-post '/issue-color-label/update_settings', :to => 'icladmin#update_settings'
+get '/priority-colors/settings', :to => 'rpcadmin#settings'
+post '/priority-colors/update_settings', :to => 'rpcadmin#update_settings'

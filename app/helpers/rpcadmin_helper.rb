@@ -1,11 +1,11 @@
-module IcladminHelper
+module RpcadminHelper
 	def self.isPluginEnabled
-		@configuration = IcladminHelper.getConfiguration
+		@configuration = RpcadminHelper.getConfiguration
 		return ((!@configuration['enabled'].nil?) and (@configuration['enabled'].to_s == '1'))
 	end
 
 	def self.getConfiguration
-		file = File.open(IcladminHelper.getConfigurationFile)
+		file = File.open(RpcadminHelper.getConfigurationFile)
 		json = file.read
 		@return = JSON.parse(json)
 		return @return[0]
@@ -17,7 +17,7 @@ module IcladminHelper
 	end
 
 	def self.getSettingsDisplay
-		@configuration = IcladminHelper.getConfiguration
+		@configuration = RpcadminHelper.getConfiguration
 		return @configuration['css']
 	end
 end

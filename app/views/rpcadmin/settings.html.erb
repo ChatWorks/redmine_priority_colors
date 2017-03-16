@@ -1,12 +1,12 @@
-<h2>Issue Colors Label Settings</h2>
+<h2>Priority Color Settings</h2>
 
-<%= javascript_include_tag '../vendor/colpick.js', :plugin => 'issue_color_label' %>
-<%= stylesheet_link_tag '../vendor/colpick.css', :plugin => 'issue_color_label' %>
+<%= javascript_include_tag '../vendor/colpick.js', :plugin => 'redmine_priority_colors' %>
+<%= stylesheet_link_tag '../vendor/colpick.css', :plugin => 'redmine_priority_colors' %>
 
-<%= stylesheet_link_tag 'settings.css', :plugin => 'issue_color_label' %>
-<%= javascript_include_tag 'settings.js', :plugin => 'issue_color_label' %>
+<%= stylesheet_link_tag 'settings.css', :plugin => 'redmine_priority_colors' %>
+<%= javascript_include_tag 'settings.js', :plugin => 'redmine_priority_colors' %>
 
-<div id="icl_settings">
+<div id="rpc_settings">
 	<% if (@isUserAdmin) %><form method="post" action="update_settings"><% end %>
 		<div class="row">
 			<h3>Enabled:</h3>
@@ -37,20 +37,20 @@
 								<% @option_code = "color" %>
 								<div class="picker" id="<%= @option_code %>_<%= @key %>"></div>
 								<input id="select_<%= @option_code %>_<%= @key %>" type="hidden" name="css[<%= @key %>][<%= @option_code %>]" 
-									class="selectors" value="<%= (!@settingsDisplay[@key][@option_code].nil?) ? @settingsDisplay[@key][@option_code] : '' %>">
+									class="selectors" value="<%= (!@settingsDisplay[@key].nil? && !@settingsDisplay[@key][@option_code].nil?) ? @settingsDisplay[@key][@option_code] : '' %>">
 							</td>
 							<td>
 								<% @option_code = "background-color" %>
 								<div class="picker" id="<%= @option_code %>_<%= @key %>"></div>
 								<input id="select_<%= @option_code %>_<%= @key %>" type="hidden" name="css[<%= @key %>][<%= @option_code %>]" 
-									class="selectors" value="<%= (!@settingsDisplay[@key][@option_code].nil?) ? @settingsDisplay[@key][@option_code] : '' %>">
+									class="selectors" value="<%= (!@settingsDisplay[@key].nil? && !@settingsDisplay[@key][@option_code].nil?) ? @settingsDisplay[@key][@option_code] : '' %>">
 							</td>
 							<td>
 								<% @option_code = "background-image" %>
 								<div class="<%= @option_code %>" id="<%= @option_code %><%= @key %>">edit</div>
 								<input id="select_<%= @option_code %>_<%= @key %>" type="hidden" name="css[<%= @key %>][<%= @option_code %>]" 
 									class="selectors" value="http://redmine.dev/images/add.png">
-									<!-- class="selectors" value="<%= (!@settingsDisplay[@key][@option_code].nil?) ? @settingsDisplay[@key][@option_code] : '' %>"> -->
+									<!-- class="selectors" value="<%= (!@settingsDisplay[@key].nil? && !@settingsDisplay[@key][@option_code].nil?) ? @settingsDisplay[@key][@option_code] : '' %>"> -->
 							</td>
 							<td><input type="button" class="reset" id="reset_<%= @key %>" value="Reset" /></td>
 						</tr>
